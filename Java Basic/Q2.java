@@ -4,9 +4,7 @@ public class Q2{
 		float Avg;
 		Total=(a+b+c+d+e);
 		Avg= Total/5;
-		System.out.print("Total :");
-		System.out.println(Total);
-		System.out.print("Average :");
-		System.out.println(Avg);
+		System.out.println("Total :" + Total);
+		System.out.print("Average :" + Avg);
 	}
 }
