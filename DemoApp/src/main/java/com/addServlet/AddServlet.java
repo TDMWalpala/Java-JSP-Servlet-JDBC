@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 public class AddServlet extends HttpServlet{
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException{
@@ -16,10 +17,9 @@ public class AddServlet extends HttpServlet{
 		int j = Integer.parseInt(req.getParameter("num2"));
 		
 		int sum = i + j;
-//		PrintWriter out = res.getWriter();
-//		out.println("result is " + sum);
-	
-		//req.setAttribute("sum", sum);
+		HttpSession session = req.getSession();
+		session.setAttribute("sum", sum);
+
 		res.sendRedirect("sqr?sum="+sum);//URL Rewriting
 		
 		//RequestDispatcher rd = req.getRequestDispatcher("sqr");
