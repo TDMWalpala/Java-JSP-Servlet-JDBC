@@ -19,10 +19,12 @@ public class AddServlet extends HttpServlet{
 //		PrintWriter out = res.getWriter();
 //		out.println("result is " + sum);
 	
-		req.setAttribute("sum", sum);
+		//req.setAttribute("sum", sum);
+		res.sendRedirect("sqr?sum="+sum);//URL Rewriting
 		
-		RequestDispatcher rd = req.getRequestDispatcher("sqr");
-		rd.forward(req, res);
+		//RequestDispatcher rd = req.getRequestDispatcher("sqr");
+		//rd.forward(req, res);
+		
 		
 	}
 	 

@@ -10,10 +10,12 @@ import javax.servlet.http.HttpServletResponse;
 public class SquareServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException{
 		  
-		  int sum = (int) req.getAttribute("sum");
+		  int sum = Integer.parseInt(req.getParameter("sum"));
 		  sum = sum*sum;
 		  PrintWriter out = res.getWriter();
 		  out.println("Result : " + sum);
+		
+		System.out.println("sqr called");
 		
 			
 		}
