@@ -11,7 +11,7 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   
-  <servlet>
+  <!--<servlet>
       <servlet-name>abc</servlet-name>
       <servlet-class>com.addServlet.AddServlet</servlet-class>
   </servlet>
@@ -29,6 +29,6 @@
   <servlet-mapping>
       <servlet-name>def</servlet-name>
       <url-pattern>/sqr</url-pattern>
-  </servlet-mapping> 
+  </servlet-mapping> -->
   
 </web-app>
