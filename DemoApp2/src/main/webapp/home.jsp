@@ -8,6 +8,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<%
+    pageContext.setAttribute("name", "tharindu",PageContext.SESSION_SCOPE);
+   
+    try{
+    	 int x = 10/0;
+    	
+    }catch(Exception e){
+    	out.println("Error " + e.getMessage());
+    }
+ 
+%>
 </body>
 </html>
