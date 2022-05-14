@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" errorPage="error.jsp"%>
-   <%@ include file = "header.jsp" %>
+    pageEncoding="ISO-8859-1" isErrorPage="true"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-    	 int x = 10/0;
-    
-%>
+<h1>Error</h1>
+   <h2><%=exception.getMessage() %></h2>
 </body>
 </html>
